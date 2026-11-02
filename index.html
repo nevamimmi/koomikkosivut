@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaisu Nevasalmi – stand-up-koomikko</title>
+<meta name="description" content="Kaisu Nevasalmi on stand up -koomikko ja juontaja. Katso tulevat keikat ja videot ja tilaa Kaisu esiintymään tai juontamaan tapahtumaasi.">
+<link rel="canonical" href="https://nevamimmi.github.io/">
+<meta name="theme-color" content="#E28797">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="Kaisu Nevasalmi">
+<meta property="og:title" content="Kaisu Nevasalmi – stand-up-koomikko">
+<meta property="og:description" content="Stand up -koomikko ja juontaja. Tulevat keikat, videot ja keikkatilaukset.">
+<meta property="og:url" content="https://nevamimmi.github.io/">
+<meta property="og:image" content="https://nevamimmi.github.io/jakokuva.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kaisu Nevasalmi esiintyy mikrofonin kanssa värikästä tiiliseinää vasten">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kaisu Nevasalmi – stand-up-koomikko">
+<meta name="twitter:description" content="Stand up -koomikko ja juontaja. Tulevat keikat, videot ja keikkatilaukset.">
+<meta name="twitter:image" content="https://nevamimmi.github.io/jakokuva.jpg">
+<meta name="twitter:image:alt" content="Kaisu Nevasalmi esiintyy mikrofonin kanssa värikästä tiiliseinää vasten">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap">
+<link rel="preload" as="image" href="kaisu-lavalla-tiiliseina.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kaisu Nevasalmi",
+  "jobTitle": "Stand up -koomikko ja juontaja",
+  "description": "Kaisu Nevasalmi on teoriassa nainen parhaassa iässä, mutta sisäisesti raihnainen sielu, joka yrittää vain selvitä modernin maailman pyörteissä.",
+  "url": "https://nevamimmi.github.io/",
+  "image": "https://nevamimmi.github.io/kaisu-muotokuva.webp",
+  "email": "mailto:kaisu@kaisu.is",
+  "homeLocation": {"@type": "Place", "name": "Kuopio"},
+  "sameAs": ["https://www.instagram.com/nevasalmiakki/"]
+}
+</script>
+
+<style>
+:root{
+  --pink:#E28797; --yellow:#FAB146; --mint:#86BAA1; --wine:#2A1219; --wine-soft:#5A1F33; --wine-shadow:#7A2F45;
+  --paper:#FFF4F2; --paper-m:#E8F4EE; --paper-p:#FFE3E8;
+  --gl:max(16px,env(safe-area-inset-left,0px)); --gr:max(16px,env(safe-area-inset-right,0px));
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--pink);color:var(--wine);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Fredoka","Nunito",system-ui,sans-serif;font-weight:600;line-height:1.05;margin:0;text-wrap:balance}
+p,ul{margin:0}
+:focus-visible{outline:3px solid var(--wine);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--wine);color:#fff;padding:10px 16px;border-radius:8px;z-index:20}
+.skip:focus{left:16px}
+
+.site{position:relative;overflow:hidden}
+.site::after{content:"";position:absolute;inset:0;background:var(--grain);pointer-events:none;mix-blend-mode:multiply;z-index:2}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+.band{position:relative;padding-block:56px}
+.pink{background:var(--pink)} .yellow{background:var(--yellow)} .mint{background:var(--mint)}
+.wave{display:block;width:100%;height:40px;margin-block:-1px}
+.blob{position:absolute;border-radius:50%;filter:blur(46px);pointer-events:none;z-index:0}
+
+.hero{padding-block:calc(40px + env(safe-area-inset-top,0px)) 64px}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.tag{font-family:"Fredoka","Nunito",sans-serif;font-weight:500;font-size:19px;color:var(--wine-soft)}
+.hero h1{font-size:clamp(50px,12vw,104px);margin-top:6px}
+.lead{margin:20px 0 28px;max-width:40ch;font-size:18px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:17px;padding:15px 28px;border-radius:999px;background:var(--wine);color:var(--paper-p);box-shadow:0 6px 0 var(--wine-shadow);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 4px 0 var(--wine-shadow)}
+.shape{overflow:hidden;border-radius:58% 42% 47% 53% / 46% 55% 45% 54%;box-shadow:0 0 0 10px var(--ring1,var(--yellow)),0 0 0 22px rgba(255,255,255,.35)}
+.shape img{width:100%;aspect-ratio:1;object-fit:cover}
+
+.band h2{font-size:clamp(32px,6vw,48px);margin-bottom:20px}
+.bio{display:grid;gap:36px;align-items:center}
+.bio .shape{--ring1:var(--pink);max-width:360px;border-radius:46% 54% 40% 60% / 55% 45% 55% 45%}
+.bio .text{max-width:62ch;min-width:0}
+.bio p+p{margin-top:14px}
+
+.gigs{list-style:none;padding:0;display:grid;gap:14px}
+.gig{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:center;background:var(--paper-m);border-radius:24px;padding:16px}
+.gig .date{background:var(--wine);color:var(--paper-p);border-radius:18px;text-align:center;padding:10px 4px;line-height:1.1;font-family:"Fredoka","Nunito",sans-serif}
+.gig .d{display:block;font-size:28px;font-weight:600}
+.gig .m{display:block;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:.06em}
+.gig .info{min-width:0;overflow-wrap:anywhere}
+.gig h3{font-size:20px;line-height:1.2}
+.gig .meta{font-size:15px;color:var(--wine-soft)}
+.gig .more{display:inline-block;margin-top:6px;font-weight:700;font-size:15px}
+.gig-empty{padding:30px;border-radius:28px;background:var(--paper-m);border:2px dashed var(--wine);line-height:1.6}
+
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.vid{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;text-decoration:none;border-radius:30px;box-shadow:0 0 0 6px var(--paper)}
+.vid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.vid:hover img{transform:scale(1.04)}
+.vid .play{position:absolute;left:12px;bottom:12px;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;background:var(--paper);color:var(--wine)}
+
+.quotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+blockquote{margin:0;padding:26px;border-radius:30px 30px 30px 6px;background:var(--paper);font-size:18px}
+blockquote:nth-child(2){background:var(--paper-m)}
+blockquote:nth-child(3){background:var(--paper-p)}
+cite{display:block;margin-top:12px;font-style:normal;font-size:14px;font-weight:700;color:var(--wine-soft)}
+
+.contact{text-align:center;border-radius:44px;padding:52px 24px;max-width:780px;margin-inline:auto;background:var(--wine);color:var(--paper-p)}
+.mail{font-family:"Fredoka","Nunito",sans-serif;font-weight:600;font-size:clamp(26px,6vw,40px);display:inline-block;margin-top:12px;overflow-wrap:anywhere;color:var(--pink)}
+footer{position:relative;padding-block:30px calc(30px + env(safe-area-inset-bottom,0px));font-size:15px;background:var(--wine);color:var(--paper-p)}
+.foot{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;align-items:center}
+@media (min-width:780px){.hero-grid{grid-template-columns:1.15fr 1fr}.bio{grid-template-columns:360px 1fr}.band{padding-block:72px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#sisalto">Siirry sisältöön</a>
+<div class="site">
+  <header class="band hero pink">
+    <div class="blob" style="background:#FAB146;width:320px;height:320px;left:-90px;top:-70px;opacity:.5"></div>
+    <div class="blob" style="background:#fff;width:260px;height:260px;right:-60px;top:140px;opacity:.35"></div>
+    <div class="blob" style="background:#86BAA1;width:300px;height:300px;left:38%;bottom:-130px;opacity:.55"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="tag">Stand up -koomikko ja juontaja</p>
+        <h1>Kaisu Nevasalmi</h1>
+        <p class="lead">Kaisu Nevasalmi on teoriassa nainen parhaassa iässä, mutta sisäisesti raihnainen sielu, joka yrittää vain selvitä modernin maailman pyörteissä. Ihmettelemällä pääsee pitkälle ja siksi Kaisu usein päätyy kertomaan asioista, joista et välttämättä ole tiennyt mitään.</p>
+        <a class="btn" href="#yhteystiedot">Tilaa minut tapahtumaasi</a>
+      </div>
+      <div class="shape"><img src="kaisu-lavalla-tiiliseina.webp" width="800" height="640" alt="Kaisu Nevasalmi esiintyy mikrofonin kanssa värikästä tiiliseinää vasten" style="object-position:50% 40%" fetchpriority="high"></div>
+    </div>
+  </header>
+
+  <main id="sisalto">
+  <svg class="wave pink" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 C150 40 300 0 450 16 S750 40 900 18 S1100 2 1200 20 V40 H0Z" fill="#FAB146"/></svg>
+  <section class="band yellow" aria-labelledby="h-bio"><div class="wrap bio">
+    <div class="shape"><img src="kaisu-muotokuva.webp" width="1600" height="1066" alt="Kaisu Nevasalmi hymyilee hiukset hulmuten tummaa taustaa vasten" loading="lazy" decoding="async" style="object-position:60% 40%"></div>
+    <div class="text">
+      <h2 id="h-bio">Kaisusta</h2>
+      <p>Kaisu Nevasalmi on tuore koomikko Kuopiosta. Kaisu on ilmeikäs esiintyjä, joka käsittelee komediassaan itseään ja matkan varrella käyneitä sattumuksia sekä havainnoi elämää tarkasti juuri niin kuin vain Kaisu voi.</p>
+      <p>Vaivaannuttavilta tilanteilta ja väärinkäsityksiltä ei voi välttyä, kun 38-vuotias nainen seikkailee oman polun löytämisen ja tietokonepelien ihmeellisessä maailmassa. Maailman menosta kiinnostuneen Kaisun tarinoita kuunnellessa oppii yleensä jotain, mistä ei ole ennen tiennyt mitään.</p>
+      <p>Kaisu on ollut esiintymässä Nousevan Komiikan Festivaaleilla Tampereella 2026. Kaisu on esiintynyt myös kokeneiden koomikoiden Tomi Haustolan, Helena Pölläsen ja Saana Peltosen keikoilla. Keväällä 2027 Kaisu on lämmittelijänä koomikko Teemu Vesterisen sooloesityksessä Kuopiossa.</p>
+      <p>Kaisu tekee keikkoja myös juontajana. Voit tilata Kaisun juontamaan tapahtumaasi ottamalla yhteyttä sähköpostilla.</p>
+    </div>
+  </div></section>
+
+  <svg class="wave yellow" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 18 C200 0 350 38 600 20 S1000 0 1200 22 V40 H0Z" fill="#86BAA1"/></svg>
+  <section class="band mint" id="keikat" aria-labelledby="h-gig"><div class="wrap">
+    <h2 id="h-gig">Tulevat keikat</h2>
+    <div id="keikkalista" aria-live="polite"><p class="gig-empty">Ladataan keikkoja…</p></div>
+  </div></section>
+
+  <svg class="wave mint" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 C150 40 300 0 450 16 S750 40 900 18 S1100 2 1200 20 V40 H0Z" fill="#E28797"/></svg>
+  <section class="band pink" aria-labelledby="h-vid"><div class="wrap">
+    <h2 id="h-vid">Videot</h2>
+    <div class="vids">
+      <a class="vid" href="https://www.instagram.com/reel/DNS8AHUsdsO/" target="_blank" rel="noopener" aria-label="Katso video 1 Instagramissa"><img src="kaisu-lavalla-tiiliseina.webp" width="800" height="640" alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true">▶ Katso Instagramissa</span></a>
+      <a class="vid" href="https://www.instagram.com/reel/DSIly1zipj9/" target="_blank" rel="noopener" aria-label="Katso video 2 Instagramissa"><img src="kaisu-lavalla-maalaus.webp" width="800" height="1422" alt="" loading="lazy" decoding="async" style="object-position:50% 30%"><span class="play" aria-hidden="true">▶ Katso Instagramissa</span></a>
+      <a class="vid" href="https://www.instagram.com/reel/DSSjvsEiKSC/" target="_blank" rel="noopener" aria-label="Katso video 3 Instagramissa"><img src="kaisu-muotokuva.webp" width="1600" height="1066" alt="" loading="lazy" decoding="async" style="object-position:60% 40%"><span class="play" aria-hidden="true">▶ Katso Instagramissa</span></a>
+    </div>
+  </div></section>
+
+  <svg class="wave pink" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 18 C200 0 350 38 600 20 S1000 0 1200 22 V40 H0Z" fill="#FAB146"/></svg>
+  <section class="band yellow" aria-labelledby="h-q"><div class="wrap">
+    <h2 id="h-q">Yleisöltä</h2>
+    <div class="quotes">
+      <blockquote>“Kaisu on henkisesti mummo, mutta onnistuneesti larppaisi 16-vuotiasta”<cite>Kommentti yleisöltä</cite></blockquote>
+      <blockquote>“Kaisu on monipuolinen äänenkäyttäjä, tarkkaavainen havainnoija ja helposti lähestyttävä”<cite>Kommentti yleisöltä</cite></blockquote>
+      <blockquote>“Kaisulla on ihana olemus, josta paistaa hyvä tahto. Kaisu on karismaattinen esiintyjä, jonka jutut ovat fiksuja ja omaperäisiä. Tulee mieleen keijukaismainen energia.”<cite>Kommentti yleisöltä</cite></blockquote>
+    </div>
+  </div></section>
+
+  <svg class="wave yellow" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 C150 40 300 0 450 16 S750 40 900 18 S1100 2 1200 20 V40 H0Z" fill="#86BAA1"/></svg>
+  <section class="band mint" id="yhteystiedot" aria-labelledby="h-c"><div class="wrap"><div class="contact">
+    <h2 id="h-c">Yhteystiedot</h2>
+    <p>Keikka- ja juontotilaukset sähköpostilla:</p>
+    <a class="mail" href="mailto:kaisu@kaisu.is">kaisu@kaisu.is</a>
+  </div></div></section>
+  </main>
+
+  <footer><div class="wrap foot">
+    <a href="https://www.instagram.com/nevasalmiakki/" target="_blank" rel="noopener">Instagram: @nevasalmiakki</a>
+    <span>Kuvat: Ilpo Kettunen, Joonas Houni, Thordis Reynis</span>
+  </div></footer>
+</div>
+
+<script>
+/* Tulevat keikat haetaan Google-taulukosta (julkaistu CSV). Menneet keikat piilotetaan automaattisesti. */
+(function(){
+  var CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vSggCtJKYHZCOnoSuc_B4y-fX9OaJ4BFWsfKDiDcCMy_mYaTZytSVEQ2GU1mDi3Fk5PIrZbEfOJ_CVa/pub?gid=0&single=true&output=csv';
+  var box=document.getElementById('keikkalista');
+  var KK=['tammi','helmi','maalis','huhti','touko','kesä','heinä','elo','syys','loka','marras','joulu'];
+
+  function parseCSV(t){
+    var rows=[],row=[],f='',q=false;
+    for(var i=0;i<t.length;i++){
+      var c=t[i];
+      if(q){ if(c==='"'){ if(t[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+      else if(c==='"') q=true;
+      else if(c===','){row.push(f);f='';}
+      else if(c==='\n'||c==='\r'){ if(c==='\r'&&t[i+1]==='\n')i++; row.push(f);rows.push(row);row=[];f=''; }
+      else f+=c;
+    }
+    if(f!==''||row.length){row.push(f);rows.push(row);}
+    return rows.filter(function(r){return r.some(function(x){return x.trim()!=='';});});
+  }
+  function parseDate(s){
+    s=(s||'').trim(); var m;
+    if(m=s.match(/(\d{4})-(\d{1,2})-(\d{1,2})/)) return new Date(+m[1],m[2]-1,+m[3]);
+    if(m=s.match(/(\d{1,2})[.\/](\d{1,2})[.\/](\d{2,4})/)){var y=+m[3]; if(y<100)y+=2000; return new Date(y,m[2]-1,+m[1]);}
+    return null;
+  }
+  function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e;}
+  function empty(msg){box.innerHTML=''; box.appendChild(el('p','gig-empty',msg));}
+
+  function render(rows){
+    if(rows.length<2){empty('Uusia keikkoja ilmoitetaan pian. Seuraa Instagramia!');return;}
+    var head=rows[0].map(function(h){return h.trim().toLowerCase();});
+    function col(re){for(var i=0;i<head.length;i++) if(re.test(head[i])) return i; return -1;}
+    var cDate=col(/p(ä|a)iv|pvm|date/), cTime=col(/aika|klo|kello|time/), cTitle=col(/tapahtuma|keikka|nimi|show|event|otsikko/),
+        cVenue=col(/paikka(?!kunta)|venue|ravintola|klubi/), cCity=col(/kaupunki|paikkakunta|city/), cLink=col(/linkki|liput|lippu|link|url|ticket/);
+    var used=[cDate,cTime,cTitle,cVenue,cCity,cLink];
+    var today=new Date(); today.setHours(0,0,0,0);
+    var gigs=[];
+    rows.slice(1).forEach(function(r){
+      var d=cDate>-1?parseDate(r[cDate]):null, di=cDate;
+      if(!d){for(var i=0;i<r.length;i++){d=parseDate(r[i]); if(d){di=i;break;}}}
+      if(!d||isNaN(d)||d<today) return;
+      gigs.push({d:d,r:r,di:di});
+    });
+    gigs.sort(function(a,b){return a.d-b.d;});
+    if(!gigs.length){empty('Uusia keikkoja ilmoitetaan pian. Seuraa Instagramia!');return;}
+    var ul=el('ul','gigs');
+    gigs.forEach(function(g){
+      var r=g.r, get=function(i){return i>-1&&r[i]?r[i].trim():'';};
+      var li=el('li','gig');
+      var dt=el('time','date'); dt.dateTime=g.d.getFullYear()+'-'+String(g.d.getMonth()+1).padStart(2,'0')+'-'+String(g.d.getDate()).padStart(2,'0');
+      dt.appendChild(el('span','d',g.d.getDate()+'.')); dt.appendChild(el('span','m',KK[g.d.getMonth()]));
+      var info=el('div','info');
+      var title=get(cTitle)||get(cVenue)||'Keikka';
+      info.appendChild(el('h3',null,title));
+      var meta=[], wd=g.d.toLocaleDateString('fi-FI',{weekday:'long',day:'numeric',month:'numeric',year:'numeric'});
+      wd=wd.charAt(0).toUpperCase()+wd.slice(1);
+      meta.push(wd+(get(cTime)?' klo '+get(cTime).replace(/^klo\s*/i,''):''));
+      if(get(cVenue)&&get(cVenue)!==title) meta.push(get(cVenue));
+      if(get(cCity)) meta.push(get(cCity));
+      r.forEach(function(v,i){ if(used.indexOf(i)===-1&&i!==g.di&&v.trim()&&!/^https?:\/\//.test(v.trim())) meta.push(v.trim()); });
+      info.appendChild(el('p','meta',meta.join(' · ')));
+      var link=get(cLink); if(!/^https?:\/\//.test(link)){link='';r.forEach(function(v){if(!link&&/^https?:\/\//.test(v.trim()))link=v.trim();});}
+      if(link){var a=el('a','more','Lisätiedot ja liput →'); a.href=link; a.target='_blank'; a.rel='noopener'; info.appendChild(a);}
+      li.appendChild(dt); li.appendChild(info); ul.appendChild(li);
+    });
+    box.innerHTML=''; box.appendChild(ul);
+  }
+
+  fetch(CSV_URL,{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw 0; return r.text();})
+    .then(function(t){render(parseCSV(t));})
+    .catch(function(){empty('Keikkalista ei juuri nyt latautunut. Uusimmat keikat löydät Instagramista.');});
+})();
+</script>
+</body>
+</html>
