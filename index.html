@@ -94,10 +94,10 @@ p,ul{margin:0}
 .bio p+p{margin-top:14px}
 
 .gigs{list-style:none;padding:0;display:grid;gap:14px}
-.gig{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:center;background:var(--paper-m);border-radius:24px;padding:16px}
+.gig{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:center;background:var(--paper-m);border-radius:24px;padding:16px}
 .gig .date{background:var(--wine);color:var(--paper-p);border-radius:18px;text-align:center;padding:10px 4px;line-height:1.1;font-family:"Fredoka","Nunito",sans-serif}
-.gig .d{display:block;font-size:28px;font-weight:600}
-.gig .m{display:block;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:.06em}
+.gig .d{display:block;font-size:24px;font-weight:600;padding-block:8px;font-variant-numeric:tabular-nums}
+.gig .club{font-weight:700;font-size:16px;margin-top:2px}
 .gig .info{min-width:0;overflow-wrap:anywhere}
 .gig h3{font-size:20px;line-height:1.2}
 .gig .meta{font-size:15px;color:var(--wine-soft)}
@@ -199,7 +199,6 @@ footer{position:relative;padding-block:30px calc(30px + env(safe-area-inset-bott
 (function(){
   var CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vSggCtJKYHZCOnoSuc_B4y-fX9OaJ4BFWsfKDiDcCMy_mYaTZytSVEQ2GU1mDi3Fk5PIrZbEfOJ_CVa/pub?gid=0&single=true&output=csv';
   var box=document.getElementById('keikkalista');
-  var KK=['tammi','helmi','maalis','huhti','touko','kesä','heinä','elo','syys','loka','marras','joulu'];
 
   function parseCSV(t){
     var rows=[],row=[],f='',q=false;
@@ -245,15 +244,15 @@ footer{position:relative;padding-block:30px calc(30px + env(safe-area-inset-bott
       var r=g.r, get=function(i){return i>-1&&r[i]?r[i].trim():'';};
       var li=el('li','gig');
       var dt=el('time','date'); dt.dateTime=g.d.getFullYear()+'-'+String(g.d.getMonth()+1).padStart(2,'0')+'-'+String(g.d.getDate()).padStart(2,'0');
-      dt.appendChild(el('span','d',g.d.getDate()+'.')); dt.appendChild(el('span','m',KK[g.d.getMonth()]));
+      dt.appendChild(el('span','d',g.d.getDate()+'.'+(g.d.getMonth()+1)+'.'));
       var info=el('div','info');
-      var title=get(cTitle)||get(cVenue)||'Keikka';
+      var title=get(cCity)||get(cVenue)||get(cTitle)||'Keikka';
       info.appendChild(el('h3',null,title));
+      var club=[get(cTitle),get(cVenue)].filter(function(x,i,a){return x&&x!==title&&a.indexOf(x)===i;});
+      if(club.length) info.appendChild(el('p','club',club.join(' · ')));
       var meta=[], wd=g.d.toLocaleDateString('fi-FI',{weekday:'long',day:'numeric',month:'numeric',year:'numeric'});
       wd=wd.charAt(0).toUpperCase()+wd.slice(1);
       meta.push(wd+(get(cTime)?' klo '+get(cTime).replace(/^klo\s*/i,''):''));
-      if(get(cVenue)&&get(cVenue)!==title) meta.push(get(cVenue));
-      if(get(cCity)) meta.push(get(cCity));
       r.forEach(function(v,i){ if(used.indexOf(i)===-1&&i!==g.di&&v.trim()&&!/^https?:\/\//.test(v.trim())) meta.push(v.trim()); });
       info.appendChild(el('p','meta',meta.join(' · ')));
       var link=get(cLink); if(!/^https?:\/\//.test(link)){link='';r.forEach(function(v){if(!link&&/^https?:\/\//.test(v.trim()))link=v.trim();});}
